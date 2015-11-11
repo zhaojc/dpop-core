@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    detail description: http://wiki.babel.baidu.com/twiki/pub/Com/Pmo/Scm/RD%C3%A4%C2%B8%C2%93%C3%A5%C2%8C%C2%BA/%E8%A7%84%E8%8C%83ci.xml
+    ** : NOT NULL
+    element: DEFAULT VALUE
+    -->
+<ci>
+    <base-conf>
+        <user>**</user>
+        <passwd>**</passwd>
+        <mail/>
+        <phone/>
+        <productline>**</productline>
+    </base-conf>
+
+    <pre-submit>
+        <sub-process>
+            <name>compile_ut</name>
+            <type>localbuild</type>
+            <ignoreStatus>false</ignoreStatus>
+            <command>mvn clean package</command>
+        </sub-process>
+    </pre-submit>
+    <post-action>
+        <command/>
+    </post-action>
+</ci>
